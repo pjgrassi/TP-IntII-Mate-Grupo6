@@ -47,3 +47,29 @@ def difsim(lista1, lista2):
             lista_ds.append(elemento) #agrega elemento controlado
     return lista_ds
 
+#Conteo de repeticion de digitos en numero DNI 
+def rep_dig(num,cont={}):
+    if num==0:  # caso base
+        return cont 
+    ultimo=num%10 #busca el ultimo digito
+    if ultimo in cont:
+        cont[ultimo] += 1 #suma 1 si lo encuentra
+    else:
+        cont[ultimo] = 1 #deja el valor 1 si no se encuentran mas
+    return rep_dig(num//10,cont) #llamada recursiva de la funcion
+
+#Conteo de cantidad de digitos del numero
+def conteo_dig(num):
+    return len(str(num)) #se cuenta como str los digitos
+
+#Evaluacion de condicion si un conjunto posee diversidad numerica
+def diver(lista):
+    cont=0
+    for i in lista[:]:
+        cont+=1 #se utiliza contador para recorrer la lista
+        if cont>=6: #condicion a evaluar
+            return "Se cumple!"
+        else:
+            return "No se cumple"
+
+
