@@ -69,6 +69,13 @@ def diver(lista):
     else:
         return "No se cumple"
 
+#Suma de los digitos del DNI
+def suma_digitos(num):
+    return sum(int(digito) for digito in str(num))
+
+
+#Operaciones con años de nacimiento
+
 def es_bisiesto(anio):
     return (anio % 4 == 0 and anio % 100 != 0) or (anio % 400 == 0)
 

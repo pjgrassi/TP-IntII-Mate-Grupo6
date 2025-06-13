@@ -51,6 +51,7 @@ def operaciones_dni():
     print(f"La condicion {diver(A)}")
 
 
+#Calculos con años de nacimiento
 
 def operaciones_anios():
     anios = ingresar_anios()
@@ -70,6 +71,8 @@ def operaciones_anios():
     print("Producto cartesiano (Año, Edad):")
     for par in producto_cartesiano(anios, edades):
         print(par)
+
+#Menu de ejecucion del programa
 
 def menu():
     print("Seleccione una opcion:")
