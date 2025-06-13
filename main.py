@@ -38,6 +38,11 @@ def operaciones_dni():
     dni=(input("Ingrese el numero de su DNI: "))
     print(f"El numero de DNI {dni} posee {conteo_dig(dni)} digitos")
 
+    # Suma total de digitos que posee un numero
+    print("Ahora vamos a sumar los digitos posee el numero")
+    dni=(input("Ingrese el numero de su DNI: "))
+    print(f"La suma total de los digitos del DNI {dni} es {suma_digitos(dni)}")
+
     # Evaluacion de condicion si el conjunto generado a partir de un DNI posee diversidad numerica
     print("En este apartado veremos si se cumple la condicion de diversidad numerica en un conjunto")
     dni=input("Ingrese un DNI: ")
