@@ -48,7 +48,7 @@ def difsim(lista1, lista2):
     return lista_ds
 
 #Conteo de repeticion de digitos en numero DNI 
-def rep_dig(num,cont={}):
+def rep_dig(num, cont={}):
     if num==0:  # caso base
         return cont 
     ultimo=num%10 #busca el ultimo digito
@@ -72,4 +72,30 @@ def diver(lista):
         else:
             return "No se cumple"
 
+def es_bisiesto(anio):
+    return (anio % 4 == 0 and anio % 100 != 0) or (anio % 400 == 0)
 
+def ingresar_anios():
+    anios = []
+    n = int(input("¿Cuántos integrantes hay en el grupo? "))
+    for i in range(n):
+        anio = int(input(f"Ingrese el año de nacimiento del integrante {i+1}: "))
+        anios.append(anio)
+    return anios
+
+def contar_pares_impares(anios):
+    pares = sum(1 for anio in anios if anio % 2 == 0)
+    impares = len(anios) - pares
+    return pares, impares
+
+def todos_post_2000(anios):
+    return all(anio > 2000 for anio in anios)
+
+def alguno_bisiesto(anios):
+    return any(es_bisiesto(anio) for anio in anios)
+
+def calcular_edades(anios, anio_actual):
+    return [anio_actual - anio for anio in anios]
+
+def producto_cartesiano(anios, edades):
+    return [(anio, edad) for anio in anios for edad in edades]
