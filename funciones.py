@@ -104,5 +104,3 @@ def calcular_edades(anios, anio_actual):
 def producto_cartesiano(anios, edades):
     return [(anio, edad) for anio in anios for edad in edades]
 
-def suma_digitos(num):
-    return sum(int(digito) for digito in str(num))
