@@ -64,13 +64,10 @@ def conteo_dig(num):
 
 #Evaluacion de condicion si un conjunto posee diversidad numerica
 def diver(lista):
-    cont=0
-    for i in lista[:]:
-        cont+=1 #se utiliza contador para recorrer la lista
-        if cont>=6: #condicion a evaluar
-            return "Se cumple!"
-        else:
-            return "No se cumple"
+    if len(lista) >= 6:
+        return "Se cumple!"
+    else:
+        return "No se cumple"
 
 def es_bisiesto(anio):
     return (anio % 4 == 0 and anio % 100 != 0) or (anio % 400 == 0)
