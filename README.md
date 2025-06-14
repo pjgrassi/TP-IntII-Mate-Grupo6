@@ -31,3 +31,7 @@ Trabajo realizado por el Grupo 6.
      Franco González Ponzio
      Juan Ignacio Villalba
 ```
+
+### Video explicativo del proyecto
+
+[![Explicación del Proyecto](https://img.youtube.com/vi/ylPEG3a_qkQ/0.jpg)](https://youtu.be/ylPEG3a_qkQ)
